@@ -79,7 +79,7 @@ if(isset($_POST['send']))
         <!--	Header end  -->
         
         <!--	Banner -->
-        <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
+        <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb1');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -110,22 +110,22 @@ if(isset($_POST['send']))
                                 <li class="d-flex mb-4"> <i class="fas fa-map-marker-alt text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Address</h5>
-                                        <span class="text-secondary">Collins Street West, Victoria 8007, Australia</span> 
-										<span class="text-secondary">Collins Street West, Victoria 8007, Australia</span>
+                                        <span class="text-secondary">Westlands Nairobi, Eldoret Kenya</span> 
+										
 										</div>
                                 </li>
                                 <li class="d-flex mb-4"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Call Us</h5>
-                                        <span class="d-table text-secondary">012 34 567 809</span>
-										<span class="text-secondary">012 34 567 809 </span>
+                                        <span class="d-table text-secondary">+254 724 052 417</span>
+										
 									</div>
                                 </li>
                                 <li class="d-flex mb-4"> <i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Email Adderss</h5>
 										<span class="d-table text-secondary">info@kenstate.co.ke</span>
-										<span class="text-secondary">info@kenstate.co.ke</span>
+										
 										</div>
                                 </li>
                             </ul>
