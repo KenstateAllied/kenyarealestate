@@ -40,40 +40,40 @@ if(isset($_POST['add']))
 	
 	$aimage=$_FILES['aimage']['name'];
 	$aimage1=$_FILES['aimage1']['name'];
-	$aimage2=$_FILES['aimage2']['name'];
-	$aimage3=$_FILES['aimage3']['name'];
-	$aimage4=$_FILES['aimage4']['name'];
+	//$aimage2=$_FILES['aimage2']['name'];
+	//$aimage3=$_FILES['aimage3']['name'];
+	//$aimage4=$_FILES['aimage4']['name'];
 	
-	$fimage=$_FILES['fimage']['name'];
-	$fimage1=$_FILES['fimage1']['name'];
-	$fimage2=$_FILES['fimage2']['name'];
+	//$fimage=$_FILES['fimage']['name'];
+	//$fimage1=$_FILES['fimage1']['name'];
+	//$fimage2=$_FILES['fimage2']['name'];
 	
 	$temp_name  =$_FILES['aimage']['tmp_name'];
 	$temp_name1 =$_FILES['aimage1']['tmp_name'];
-	$temp_name2 =$_FILES['aimage2']['tmp_name'];
-	$temp_name3 =$_FILES['aimage3']['tmp_name'];
-	$temp_name4 =$_FILES['aimage4']['tmp_name'];
+	//$temp_name2 =$_FILES['aimage2']['tmp_name'];
+	//$temp_name3 =$_FILES['aimage3']['tmp_name'];
+	//$temp_name4 =$_FILES['aimage4']['tmp_name'];
 	
-	$temp_name5 =$_FILES['fimage']['tmp_name'];
-	$temp_name6 =$_FILES['fimage1']['tmp_name'];
-	$temp_name7 =$_FILES['fimage2']['tmp_name'];
+	//$temp_name5 =$_FILES['fimage']['tmp_name'];
+	//$temp_name6 =$_FILES['fimage1']['tmp_name'];
+	//$temp_name7 =$_FILES['fimage2']['tmp_name'];
 	
 	move_uploaded_file($temp_name,"admin/property/$aimage");
 	move_uploaded_file($temp_name1,"admin/property/$aimage1");
-	move_uploaded_file($temp_name2,"admin/property/$aimage2");
-	move_uploaded_file($temp_name3,"admin/property/$aimage3");
-	move_uploaded_file($temp_name4,"admin/property/$aimage4");
+	//move_uploaded_file($temp_name2,"admin/property/$aimage2");
+	//move_uploaded_file($temp_name3,"admin/property/$aimage3");
+	//move_uploaded_file($temp_name4,"admin/property/$aimage4");
 	
-	move_uploaded_file($temp_name5,"admin/property/$fimage");
-	move_uploaded_file($temp_name6,"admin/property/$fimage1");
-	move_uploaded_file($temp_name7,"admin/property/$fimage2");
+	//move_uploaded_file($temp_name5,"admin/property/$fimage");
+	//move_uploaded_file($temp_name6,"admin/property/$fimage1");
+	//move_uploaded_file($temp_name7,"admin/property/$fimage2");
 	
 	
 	$sql = "UPDATE property SET title= '{$title}', pcontent= '{$content}', type='{$ptype}', bhk='{$bhk}', stype='{$stype}',
 	bedroom='{$bed}', bathroom='{$bath}', balcony='{$balc}', kitchen='{$kitc}', hall='{$hall}', floor='{$floor}', 
 	size='{$asize}', price='{$price}', location='{$loc}', city='{$city}', state='{$state}', feature='{$feature}',
-	pimage='{$aimage}', pimage1='{$aimage1}', pimage2='{$aimage2}', pimage3='{$aimage3}', pimage4='{$aimage4}',
-	uid='{$uid}', status='{$status}', mapimage='{$fimage}', topmapimage='{$fimage1}', groundmapimage='{$fimage2}', 
+	pimage='{$aimage}', pimage1='{$aimage1}',
+	uid='{$uid}', status='{$status}', 
 	totalfloor='{$totalfloor}' WHERE pid = {$pid}";
 	
 	$result=mysqli_query($con,$sql);
@@ -207,9 +207,9 @@ if(isset($_POST['add']))
 													<div class="col-lg-9">
 														<select class="form-control" required name="ptype">
 															<option value="">Select Type</option>
-															<option value="appartment">Appartment</option>
+															<option value="appartment">Apartment</option>
 															<option value="flat">Flat</option>
-															<option value="bunglow">Bunglow</option>
+															<option value="bunglow">Bungalow</option>
 															<option value="house">House</option>
 															<option value="villa">Villa</option>
 															<option value="office">Office</option>

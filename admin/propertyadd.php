@@ -39,37 +39,37 @@ if(isset($_POST['add']))
 	
 	$aimage=$_FILES['aimage']['name'];
 	$aimage1=$_FILES['aimage1']['name'];
-	$aimage2=$_FILES['aimage2']['name'];
-	$aimage3=$_FILES['aimage3']['name'];
-	$aimage4=$_FILES['aimage4']['name'];
+	//$aimage2=$_FILES['aimage2']['name'];
+	//$aimage3=$_FILES['aimage3']['name'];
+	//$aimage4=$_FILES['aimage4']['name'];
 	
-	$fimage=$_FILES['fimage']['name'];
-	$fimage1=$_FILES['fimage1']['name'];
-	$fimage2=$_FILES['fimage2']['name'];
+	//$fimage=$_FILES['fimage']['name'];
+	//$fimage1=$_FILES['fimage1']['name'];
+	//$fimage2=$_FILES['fimage2']['name'];
 	
 	$temp_name  =$_FILES['aimage']['tmp_name'];
 	$temp_name1 =$_FILES['aimage1']['tmp_name'];
-	$temp_name2 =$_FILES['aimage2']['tmp_name'];
-	$temp_name3 =$_FILES['aimage3']['tmp_name'];
-	$temp_name4 =$_FILES['aimage4']['tmp_name'];
+	//$temp_name2 =$_FILES['aimage2']['tmp_name'];
+	//$temp_name3 =$_FILES['aimage3']['tmp_name'];
+	//$temp_name4 =$_FILES['aimage4']['tmp_name'];
 	
-	$temp_name5 =$_FILES['fimage']['tmp_name'];
-	$temp_name6 =$_FILES['fimage1']['tmp_name'];
-	$temp_name7 =$_FILES['fimage2']['tmp_name'];
+	//$temp_name5 =$_FILES['fimage']['tmp_name'];
+	//$temp_name6 =$_FILES['fimage1']['tmp_name'];
+	//$temp_name7 =$_FILES['fimage2']['tmp_name'];
 	
 	move_uploaded_file($temp_name,"property/$aimage");
 	move_uploaded_file($temp_name1,"property/$aimage1");
-	move_uploaded_file($temp_name2,"property/$aimage2");
-	move_uploaded_file($temp_name3,"property/$aimage3");
-	move_uploaded_file($temp_name4,"property/$aimage4");
+	//move_uploaded_file($temp_name2,"property/$aimage2");
+	//move_uploaded_file($temp_name3,"property/$aimage3");
+	//move_uploaded_file($temp_name4,"property/$aimage4");
 	
-	move_uploaded_file($temp_name5,"property/$fimage");
-	move_uploaded_file($temp_name6,"property/$fimage1");
-	move_uploaded_file($temp_name7,"property/$fimage2");
+	//move_uploaded_file($temp_name5,"property/$fimage");
+	//move_uploaded_file($temp_name6,"property/$fimage1");
+	//move_uploaded_file($temp_name7,"property/$fimage2");
 	
-	$sql="insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,uid,status,mapimage,topmapimage,groundmapimage,totalfloor)
+	$sql="insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,uid,status,totalfloor)
 	values('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
-	'$loc','$city','$state','$feature','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$uid','$status','$fimage','$fimage1','$fimage2','$totalfloor')";
+	'$loc','$city','$state','$feature','$aimage','$aimage1','$uid','$status','$totalfloor')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -317,7 +317,7 @@ if(isset($_POST['add']))
 										<div class="form-group row">
 											<label class="col-lg-2 col-form-label">Feature</label>
 											<div class="col-lg-9">
-											<p class="alert alert-danger">* Important Please Do Not Remove Below Content Only Change <b>Yes</b> Or <b>No</b> or Details and Do Not Add More Details</p>
+											<p class="alert alert-danger">* Do Not Delete Below Only change <b>Yes</b> Or <b>No</b> or Details and Do Not Add More Details</p>
 											
 											<textarea class="tinymce form-control" name="feature" rows="10" cols="30">
 												<!---feature area start--->
@@ -334,14 +334,14 @@ if(isset($_POST['add']))
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Type : </span>Appartment</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Security : </span>Yes</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Dining Capacity : </span>10 People</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Temple  : </span>Yes</li>
+														<li class="mb-3"><span class="text-secondary font-weight-bold">Wi-Fi  : </span>Yes</li>
 														
 														</ul>
 													</div>
 													<div class="col-md-4">
 														<ul>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">3rd Party : </span>No</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Alivator : </span>Yes</li>
+														<li class="mb-3"><span class="text-secondary font-weight-bold">Elevator : </span>Yes</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">CCTV : </span>Yes</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Water Supply : </span>Ground Water / Tank</li>
 														</ul>
@@ -361,18 +361,7 @@ if(isset($_POST['add']))
 														<input class="form-control" name="aimage" type="file" required="">
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 2</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage2" type="file" required="">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 4</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage4" type="file" required="">
-													</div>
-												</div>
+												
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Status</label>
 													<div class="col-lg-9">
@@ -383,13 +372,7 @@ if(isset($_POST['add']))
 														</select>
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Basement Floor Plan Image</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage1" type="file">
-													</div>
-												</div>
-											</div>
+												
 											<div class="col-xl-6">
 												
 												<div class="form-group row">
@@ -398,30 +381,15 @@ if(isset($_POST['add']))
 														<input class="form-control" name="aimage1" type="file" required="">
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">image 3</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage3" type="file" required="">
-													</div>
-												</div>
+												
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Uid</label>
 													<div class="col-lg-9">
 														<input type="text" class="form-control" name="uid" required placeholder="Enter User Id (only number)">
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Floor Plan Image</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage" type="file">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Ground Floor Plan Image</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage2" type="file">
-													</div>
-												</div>
+												
+												
 											</div>
 										</div>
 

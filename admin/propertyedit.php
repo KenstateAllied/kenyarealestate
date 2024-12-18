@@ -40,40 +40,40 @@ if(isset($_POST['add']))
 	
 	$aimage=$_FILES['aimage']['name'];
 	$aimage1=$_FILES['aimage1']['name'];
-	$aimage2=$_FILES['aimage2']['name'];
-	$aimage3=$_FILES['aimage3']['name'];
-	$aimage4=$_FILES['aimage4']['name'];
+	//$aimage2=$_FILES['aimage2']['name'];
+	//$aimage3=$_FILES['aimage3']['name'];
+	//$aimage4=$_FILES['aimage4']['name'];
 	
-	$fimage=$_FILES['fimage']['name'];
-	$fimage1=$_FILES['fimage1']['name'];
-	$fimage2=$_FILES['fimage2']['name'];
+	//$fimage=$_FILES['fimage']['name'];
+	//$fimage1=$_FILES['fimage1']['name'];
+	//$fimage2=$_FILES['fimage2']['name'];
 	
 	$temp_name  =$_FILES['aimage']['tmp_name'];
 	$temp_name1 =$_FILES['aimage1']['tmp_name'];
-	$temp_name2 =$_FILES['aimage2']['tmp_name'];
-	$temp_name3 =$_FILES['aimage3']['tmp_name'];
-	$temp_name4 =$_FILES['aimage4']['tmp_name'];
+	//$temp_name2 =$_FILES['aimage2']['tmp_name'];
+	//$temp_name3 =$_FILES['aimage3']['tmp_name'];
+	//$temp_name4 =$_FILES['aimage4']['tmp_name'];
 	
-	$temp_name5 =$_FILES['fimage']['tmp_name'];
-	$temp_name6 =$_FILES['fimage1']['tmp_name'];
-	$temp_name7 =$_FILES['fimage2']['tmp_name'];
+	//$temp_name5 =$_FILES['fimage']['tmp_name'];
+	//$temp_name6 =$_FILES['fimage1']['tmp_name'];
+	//$temp_name7 =$_FILES['fimage2']['tmp_name'];
 	
 	move_uploaded_file($temp_name,"property/$aimage");
 	move_uploaded_file($temp_name1,"property/$aimage1");
-	move_uploaded_file($temp_name2,"property/$aimage2");
-	move_uploaded_file($temp_name3,"property/$aimage3");
-	move_uploaded_file($temp_name4,"property/$aimage4");
+	//move_uploaded_file($temp_name2,"property/$aimage2");
+	//move_uploaded_file($temp_name3,"property/$aimage3");
+	//move_uploaded_file($temp_name4,"property/$aimage4");
 	
-	move_uploaded_file($temp_name5,"property/$fimage");
-	move_uploaded_file($temp_name6,"property/$fimage1");
-	move_uploaded_file($temp_name7,"property/$fimage2");
+	//move_uploaded_file($temp_name5,"property/$fimage");
+	//move_uploaded_file($temp_name6,"property/$fimage1");
+	//move_uploaded_file($temp_name7,"property/$fimage2");
 	
 	
 	$sql = "UPDATE property SET title= '{$title}', pcontent= '{$content}', type='{$ptype}', bhk='{$bhk}', stype='{$stype}',
 	bedroom='{$bed}', bathroom='{$bath}', balcony='{$balc}', kitchen='{$kitc}', hall='{$hall}', floor='{$floor}', 
 	size='{$asize}', price='{$price}', location='{$loc}', city='{$city}', state='{$state}', feature='{$feature}',
-	pimage='{$aimage}', pimage1='{$aimage1}', pimage2='{$aimage2}', pimage3='{$aimage3}', pimage4='{$aimage4}',
-	uid='{$uid}', status='{$status}', mapimage='{$fimage}', topmapimage='{$fimage1}', groundmapimage='{$fimage2}', 
+	pimage='{$aimage}', pimage1='{$aimage1}', 
+	uid='{$uid}', status='{$status}', 
 	totalfloor='{$totalfloor}' WHERE pid = {$pid}";
 	
 	$result=mysqli_query($con,$sql);
@@ -331,7 +331,7 @@ if(isset($_POST['add']))
 										<div class="form-group row">
 											<label class="col-lg-2 col-form-label">Feature</label>
 											<div class="col-lg-9">
-											<p class="alert alert-danger">* Important Please Do Not Remove Below Content Only Change <b>Yes</b> Or <b>No</b> or Details and Do Not Add More Details</p>
+											<p class="alert alert-danger">* Please Do Not Delete  Content Only Change <b>Yes</b> Or <b>No</b> or Details and Do Not Add More Details</p>
 											
 											<textarea class="tinymce form-control" name="feature" rows="10" cols="30">
 												
@@ -352,13 +352,7 @@ if(isset($_POST['add']))
 														<img src="property/<?php echo $row['18'];?>" alt="pimage" height="150" width="180">
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 2</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage2" type="file" required="">
-														<img src="property/<?php echo $row['20'];?>" alt="pimage" height="150" width="180">
-													</div>
-												</div>
+												
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Image 4</label>
 													<div class="col-lg-9">
@@ -376,13 +370,7 @@ if(isset($_POST['add']))
 														</select>
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Basement Floor Plan Image</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage1" type="file">
-														<img src="property/<?php echo $row['26'];?>" alt="pimage" height="150" width="180">
-													</div>
-												</div>
+												
 											</div>
 											<div class="col-xl-6">
 												
@@ -393,33 +381,13 @@ if(isset($_POST['add']))
 														<img src="property/<?php echo $row['19'];?>" alt="pimage" height="150" width="180">
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">image 3</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage3" type="file" required="">
-														<img src="property/<?php echo $row['21'];?>" alt="pimage" height="150" width="180">
-													</div>
-												</div>
+												
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Uid</label>
 													<div class="col-lg-9">
 														<input type="text" class="form-control" name="uid" required value="<?php echo $row['23']; ?>">
 													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Floor Plan Image</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage" type="file">
-														<img src="property/<?php echo $row['25'];?>" alt="pimage" height="150" width="180">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Ground Floor Plan Image</label>
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage2" type="file">
-														<img src="property/<?php echo $row['27'];?>" alt="pimage" height="150" width="180">
-													</div>
-												</div>
+												
 											</div>
 										</div>
 
