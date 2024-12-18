@@ -54,7 +54,7 @@ if(isset($_REQUEST['reg']))
 
 <!-- Meta Tags -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon1.ico">
 
 <!--	Fonts
 	========================================================-->

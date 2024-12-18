@@ -16,7 +16,7 @@ include("config.php");
 
 <!-- Meta Tags -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon1.ico">
 
 <!--	Fonts
 	========================================================-->
@@ -64,16 +64,16 @@ include("config.php");
                     <div class="col-lg-12">
                         <div class="text-white">
                             <h1 class="mb-4"><span class="text-primary">Find</span><br>
-                                Your dream house</h1>
+                                Your Property</h1>
                             <form method="post" action="propertygrid.php">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-2">
                                         <div class="form-group">
                                             <select class="form-control" name="type">
-                                                <option value="">Select Type</option>
-												<option value="appartment">Appartment</option>
+                                                <option value="">Select Property Type</option>
+												<option value="appartment">Apartment</option>
 												<option value="flat">Flat</option>
-												<option value="bunglow">Bunglow</option>
+												<option value="bunglow">Bungalow</option>
 												<option value="house">House</option>
 												<option value="villa">Villa</option>
 												<option value="office">Office</option>
@@ -83,15 +83,16 @@ include("config.php");
                                     <div class="col-md-6 col-lg-2">
                                         <div class="form-group">
                                             <select class="form-control" name="stype">
-                                                <option value="">Select Status</option>
+                                                <option value="">Type of purchase</option>
 												<option value="rent">Rent</option>
 												<option value="sale">Sale</option>
+                                                <option value="sale">Lease</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-8 col-lg-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="city" placeholder="Enter City or Enter State" required>
+                                            <input type="text" class="form-control" name="city" placeholder="Search by  State or city" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-lg-2">
@@ -114,35 +115,35 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">What We Do</h2></div>
+                        <h2 class="text-secondary double-down-line text-center mb-5">Types of Services</h2></div>
                 </div>
                 <div class="text-box-one">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-rent text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Selling Service</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Sale</a></h5>
                                 <p></p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-for-rent text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Rental Service</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Rent</a></h5>
                                 <p></p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-list text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Property Listing</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">For Lease</a></h5>
                                 <p></p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-diagram text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Legal Investment</a></h5>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Property Searches & Legal Issues</a></h5>
                                 <p></p>
                             </div>
                         </div>
@@ -157,7 +158,7 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-secondary double-down-line text-center mb-4">Recent Property</h2>
+                        <h2 class="text-secondary double-down-line text-center mb-4">Recent Property Listings</h2>
                     </div>
                     <!--- <div class="col-md-6">
                         <ul class="nav property-btn float-right" id="pills-tab" role="tablist">
@@ -225,26 +226,26 @@ include("config.php");
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
                         <div class="living-list pr-4">
-                            <h3 class="pb-4 mb-3 text-white">Why Choose Us</h3>
+                            <h3 class="pb-4 mb-3 text-white">Expertise & Brand </h3>
                             <ul>
                                 <li class="mb-4 text-white d-flex"> 
 									<i class="flaticon-reward flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
 									<div class="pl-2">
-										<h5 class="mb-3">Experience Quality</h5>
+										<h5 class="mb-3">Industry Knowledge</h5>
 										<p>Call Us</p>
 									</div>
                                 </li>
                                 <li class="mb-4 text-white d-flex"> 
 									<i class="flaticon-real-estate flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
 									<div class="pl-2">
-										<h5 class="mb-3">Experience Quality</h5>
+										<h5 class="mb-3">Client Service & Trust</h5>
 										<p>Call Us</p>
 									</div>
                                 </li>
                                 <li class="mb-4 text-white d-flex"> 
 									<i class="flaticon-seller flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
 									<div class="pl-2">
-										<h5 class="mb-3">Experience Quality</h5>
+										<h5 class="mb-3">Schools, Amenities etc</h5>
 										<p>Call Us</p>
 									</div>
                                 </li>
@@ -261,7 +262,7 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">How It Works</h2>
+                        <h2 class="text-secondary double-down-line text-center mb-5">Property Journey</h2>
                         </div>
                 </div>
                 <div class="row">
@@ -269,7 +270,7 @@ include("config.php");
                         <div class="icon-thumb-one text-center mb-5">
                             <div class="bg-primary text-white rounded-circle position-absolute z-index-9">1</div>
                             <div class="left-arrow"><i class="flaticon-investor flat-medium icon-primary" aria-hidden="true"></i></div>
-                            <h5 class="text-secondary mt-5 mb-4">Discussion</h5>
+                            <h5 class="text-secondary mt-5 mb-4">Discussion with us</h5>
                             <p>Call Us</p>
                         </div>
                     </div>
@@ -277,7 +278,7 @@ include("config.php");
                         <div class="icon-thumb-one text-center mb-5">
                             <div class="bg-primary text-white rounded-circle position-absolute z-index-9">2</div>
                             <div class="left-arrow"><i class="flaticon-search flat-medium icon-primary" aria-hidden="true"></i></div>
-                            <h5 class="text-secondary mt-5 mb-4">Files Review</h5>
+                            <h5 class="text-secondary mt-5 mb-4">Expert Info & advice</h5>
                             <p>Call Us</p>
                         </div>
                     </div>
@@ -285,7 +286,7 @@ include("config.php");
                         <div class="icon-thumb-one text-center mb-5">
                             <div class="bg-primary text-white rounded-circle position-absolute z-index-9">3</div>
                             <div><i class="flaticon-handshake flat-medium icon-primary" aria-hidden="true"></i></div>
-                            <h5 class="text-secondary mt-5 mb-4">Acquire</h5>
+                            <h5 class="text-secondary mt-5 mb-4">Acquisition & Ownership</h5>
                             <p>Call Us/p>
                         </div>
                     </div>
@@ -312,7 +313,7 @@ include("config.php");
 												$total = $row[0];
 												echo $total;?>">0</div>
 								<?php } ?>
-                                <div class="text-white h5">Property Available</div>
+                                <div class="text-white h5">Property Listings</div>
                             </div>
                         </div>
 						<div class="col-md-3">
@@ -326,7 +327,7 @@ include("config.php");
 												$total = $row[0];
 												echo $total;?>">0</div>
 								<?php } ?>
-                                <div class="text-white h5">Sale Property Available</div>
+                                <div class="text-white h5">Properties for Sale</div>
                             </div>
                         </div>
 						<div class="col-md-3">
@@ -340,7 +341,7 @@ include("config.php");
 												$total = $row[0];
 												echo $total;?>">0</div>
 								<?php } ?>
-                                <div class="text-white h5">Rent Property Available</div>
+                                <div class="text-white h5">Properties for Rent</div>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -354,7 +355,7 @@ include("config.php");
 												$total = $row[0];
 												echo $total;?>">0</div>
 								<?php } ?>
-                                <div class="text-white h5">Registered Users</div>
+                                <div class="text-white h5">Current Registered Users</div>
                             </div>
                         </div>
 
@@ -368,7 +369,7 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">Popular Places</h2></div>
+                        <h2 class="text-secondary double-down-line text-center mb-5">Popular Property Locations</h2></div>
                 </div>
                 <div class="col-lg-12">
                     <div class="row">
@@ -445,7 +446,7 @@ include("config.php");
 					<div class="col-lg-12">
 						<div class="content-sidebar p-4">
 							<div class="mb-3 col-lg-12">
-								<h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Testimonial</h4>
+								<h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Testimonials</h4>
 									<div class="recent-review owl-carousel owl-dots-gray owl-dots-hover-primary">
 									
 										<?php
