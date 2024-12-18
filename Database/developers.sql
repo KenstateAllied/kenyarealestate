@@ -89,10 +89,7 @@ CREATE TABLE `city` (
 -- Dumping data for table `city`
 --
 
-INSERT INTO `city` (`cid`, `cname`, `sid`) VALUES
-(9, 'navi mumbai', 3),
-(10, 'vapi', 2),
-(11, 'valsad', 2);
+INSERT INTO `city` (`cid`, `cname`, `sid`) VALUES (1, 'Mombasa',1), (2, 'Kwale',2), (3, 'Kilifi',3), (4, 'Hola',4), (5, 'Lamu',5), (6, 'Mwatate',6), (7, 'Garissa',7), (8, 'Wajir',8), (9, 'Mandera',9), (10, 'Marsabit',10), (11, 'Isiolo',11), (12, 'Meru',12), (13, 'Kathwana',13), (14, 'Embu',14), (15, 'Kitui',15), (16, 'Machakos',16), (17, 'Wote',17), (18, 'Ol kalau',18), (19, 'Nyeri',19), (20, 'Kerugoya/Kutus',20), (21, "Murang'a",21), (22, 'Kiambu',22), (23, 'Lodwar',23), (24, 'Kapenguria',24), (25, 'Maralal',25), (26, 'Kitale',26), (27, 'Eldoret',27), (28, 'Iten',28), (29, 'Kapsabet',29), (30, 'Kabarnet',30), (31, 'Nanyuki',31), (32, 'Nakuru',32), (33, 'Narok',33), (34, 'Kajiado',34), (35, 'Kericho',35), (36, 'Bomet',36), (37, 'Kakamega',37), (38, 'Vihiga',38), (39, 'Bungoma',39), (40, 'Busia',40), (41, 'Siaya',41), (42, 'Kisumu',42), (43, 'Homa Bay',43), (44, 'Migori',44), (45, 'Kisii',45), (46, 'Nyamira',46), (47, 'Nairobi',47);
 
 -- --------------------------------------------------------
 
@@ -218,13 +215,54 @@ CREATE TABLE `state` (
 --
 
 INSERT INTO `state` (`sid`, `sname`) VALUES
-(2, 'gujarat'),
-(3, 'goa'),
-(4, 'maharashtra'),
-(7, 'bihar'),
-(9, 'chhattisgarh'),
-(10, 'uttar pardesh'),
-(15, 'rajasthan');
+(1, 'Mombasa'),
+(2, 'Kwale'),
+(3, 'Kilifi'),
+(4, 'Tana River'),
+(5, 'Lamu'),
+(6, 'Taita Taveta'),
+(7, 'Garissa'),
+(8, 'Wajir'),
+(9, 'Mandera'),
+(10, 'Marsabit'),
+(11, 'Isiolo'),
+(12, 'Meru'),
+(13, 'Tharaka-Nithi'),
+(14, 'Embu'),
+(15, 'Kitui'),
+(16, 'Machakos'),
+(17, 'Makueni'),
+(18, 'Nyandarua'),
+(19, 'Nyeri'),
+(20, 'Kirinyaga'),
+(21, "Murang'a"),
+(22, 'Kiambu'),
+(23, 'Turkana'),
+(24, 'West Pokot'),
+(25, 'Samburu'),
+(26, 'Trans-nzoia'),
+(27, 'Uasin Gishu'),
+(28, 'Elgeyo Marakwet'),
+(29, 'Nandi'),
+(30, 'Baringo'),
+(31, 'Laikipia'),
+(32, 'Nakuru'),
+(33, 'Narok'),
+(34, 'Kajiado'),
+(35, 'Kericho'),
+(36, 'Bomet'),
+(37, 'Kakamega'),
+(38, 'Vihiga'),
+(39, 'Bungoma'),
+(40, 'Busia'),
+(41, 'Siaya'),
+(42, 'Kisumu'),
+(43, 'Homa Bay'),
+(44, 'Migori'),
+(45, 'Kisii'),
+(46, 'Nyamira'),
+(47, 'Nairobi');
+
 
 -- --------------------------------------------------------
 

@@ -7,9 +7,8 @@
                                 <div class="col-md-12 col-lg-4">
                                     <div class="footer-widget mb-4">
                                         <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/logo-white.png" alt="image"></a> </div>
-                                        <p class="pb-20 text-white">Call us</p>
-										<p class="pb-20 text-white">Call us</p>
-                                        </div>
+                                        <p class="pb-20 text-white">Send us your property details</p>
+										            </div>
                                 </div>
                                 <div class="col-md-12 col-lg-8">
                                     <div class="row">
@@ -18,11 +17,7 @@
                                                 <h4 class="widget-title text-white double-down-line-left position-relative">Support</h4>
                                                 <ul class="hover-text-primary">
                                                     <li><a href="#" class="text-white">Forum</a></li>
-                                                    <li><a href="#" class="text-white">Statistics</a></li>
-                                                    <li><a href="#" class="text-white">Terms and Condition</a></li>
-                                                    <li><a href="#" class="text-white">Get Support</a></li>
-                                                    <li><a href="#" class="text-white">Freequenly Ask Question</a></li>
-                                                    <li><a href="#" class="text-white">Contact</a></li>
+                                                  <li><a href="#" class="text-white">Contact</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -34,8 +29,7 @@
                                                     <li><a href="#" class="text-white">Featured Property</a></li>
                                                     <li><a href="#" class="text-white">Become A Member</a></li>
                                                     <li><a href="#" class="text-white">Submit Property</a></li>
-                                                    <li><a href="#" class="text-white">How It Work</a></li>
-                                                    <li><a href="#" class="text-white">Our Agents</a></li>
+                                                     <li><a href="#" class="text-white">Our Agents</a></li>
                                                 </ul>
                                             </div>
                                         </div>
