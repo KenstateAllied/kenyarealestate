@@ -505,7 +505,7 @@
 		step: 1000,
 		smooth: true,
 		round: 0,
-		dimension: "$",
+		dimension: "Kshs",
 		skin: "plastic" 
 	});
 
