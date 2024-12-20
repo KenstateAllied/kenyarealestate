@@ -308,7 +308,11 @@ include("config.php");
                                 </div>
                                 <input type="text" class="form-control" name="interest" placeholder="Interest Rate">
                             </div>
+<<<<<<< HEAD
                             <button type="submit" value="submit" name="calc" class="btn btn-primary mt-4">calculate Instalment</button>
+=======
+                            <button type="submit" value="submit" name="calc" class="btn btn-primary mt-4">Calclute Instalment</button>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
                         </form>
                         <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4 mt-5">Featured Property</h4>
 

@@ -104,10 +104,22 @@ if(!isset($_SESSION['auser']))
                                                     <th>State</th>
                                                     <th>Feature</th>
 													<th>Image1</th>
+<<<<<<< HEAD
                                                     
                                                     <th>Uid</th>
 													<th>Status</th>
                                                     
+=======
+                                                    <th>Image2</th>
+                                                    <th>Image3</th>
+                                                    <th>Image4</th>
+                                                    <th>Image5</th>
+                                                    <th>Uid</th>
+													<th>Status</th>
+                                                    <th>Floor Plan</th>
+                                                    <th>Basement Plan</th>
+													<th>Ground Floor Plan</th>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
                                                     <th>Total Floor</th>
                                                     <th>Date</th>
                                                     <th>Edit</th>

@@ -127,7 +127,11 @@ include("config.php");
                                             <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-primary"></i> <?php echo $row['14'];?></span> </div>
                                         <div class="px-4 pb-4 d-inline-block w-100">
                                             <div class="float-left text-capitalize"><i class="fas fa-user text-primary mr-1"></i>By : <?php echo $row['uname'];?></div>
+<<<<<<< HEAD
                                             <div class="float-right"><i class="far fa-calendar-alt text-primary mr-1"></i> 1 Month Ago</div>
+=======
+                                            <div class="float-right"><i class="far fa-calendar-alt text-primary mr-1"></i> 6 Months Ago</div>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
                                         </div>
                                     </div>
                                 </div>
@@ -190,7 +194,11 @@ include("config.php");
                                 </div>
                                 <input type="text" class="form-control" name="interest" placeholder="Interest Rate">
                             </div>
+<<<<<<< HEAD
                             <button type="submit" value="submit" name="calc" class="btn btn-primary mt-4">calculate Instalment</button>
+=======
+                            <button type="submit" value="submit" name="calc" class="btn btn-primary mt-4">Calclute Instalment</button>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
                         </form>
                         </div>
                         

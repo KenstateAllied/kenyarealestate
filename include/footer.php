@@ -6,7 +6,11 @@
                             <div class="row">
                                 <div class="col-md-12 col-lg-4">
                                     <div class="footer-widget mb-4">
+<<<<<<< HEAD
                                         <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo4.png" alt="image"></a> </div>
+=======
+                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/logo-white.png" alt="image"></a> </div>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
                                         <p class="pb-20 text-white">Send us your property details</p>
 										            </div>
                                 </div>

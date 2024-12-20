@@ -67,7 +67,11 @@ if(isset($_POST['add']))
 	//move_uploaded_file($temp_name6,"admin/property/$fimage1");
 	//move_uploaded_file($temp_name7,"admin/property/$fimage2");
 	
+<<<<<<< HEAD
 	$sql="insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,uid,status,totalfloor)
+=======
+	$sql="insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,uid,status,mapimage,topmapimage,groundmapimage,totalfloor)
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 	values('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
 	'$loc','$city','$state','$feature','$aimage','$aimage1','$uid','$status','$totalfloor')";
 	$result=mysqli_query($con,$sql);
@@ -195,9 +199,15 @@ if(isset($_POST['add']))
 													<div class="col-lg-9">
 														<select class="form-control" required name="ptype">
 															<option value="">Select Type</option>
+<<<<<<< HEAD
 															<option value="apartment">apartment</option>
 															<option value="flat">Flat</option>
 															<option value="bungalow">bungalow</option>
+=======
+															<option value="appartment">Appartment</option>
+															<option value="flat">Flat</option>
+															<option value="bunglow">Bunglow</option>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 															<option value="house">House</option>
 															<option value="villa">Villa</option>
 															<option value="office">Office</option>
@@ -358,7 +368,11 @@ if(isset($_POST['add']))
 													</div>
 													<div class="col-md-4">
 														<ul>
+<<<<<<< HEAD
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Type : </span>apartment</li>
+=======
+														<li class="mb-3"><span class="text-secondary font-weight-bold">Type : </span>Appartment</li>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Security : </span>Yes</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold">Dining Capacity : </span>10 People</li>
 														<li class="mb-3"><span class="text-secondary font-weight-bold"><Wi-Fi></Wi-Fi>  : </span>Yes</li>
@@ -388,7 +402,22 @@ if(isset($_POST['add']))
 														<input class="form-control" name="aimage" type="file" required="">
 													</div>
 												</div>
+<<<<<<< HEAD
 												
+=======
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Image 2</label>
+													<div class="col-lg-9">
+														<input class="form-control" name="aimage2" type="file" required="">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Image 4</label>
+													<div class="col-lg-9">
+														<input class="form-control" name="aimage4" type="file" required="">
+													</div>
+												</div>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Status</label>
 													<div class="col-lg-9">
@@ -399,7 +428,16 @@ if(isset($_POST['add']))
 														</select>
 													</div>
 												</div>
+<<<<<<< HEAD
 												
+=======
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Basement Floor Plan Image</label>
+													<div class="col-lg-9">
+														<input class="form-control" name="fimage1" type="file">
+													</div>
+												</div>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 											</div>
 											<div class="col-xl-6">
 												
@@ -409,10 +447,32 @@ if(isset($_POST['add']))
 														<input class="form-control" name="aimage1" type="file" required="">
 													</div>
 												</div>
+<<<<<<< HEAD
 												
 												
 												
 												
+=======
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">image 3</label>
+													<div class="col-lg-9">
+														<input class="form-control" name="aimage3" type="file" required="">
+													</div>
+												</div>
+												
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Floor Plan Image</label>
+													<div class="col-lg-9">
+														<input class="form-control" name="fimage" type="file">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Ground Floor Plan Image</label>
+													<div class="col-lg-9">
+														<input class="form-control" name="fimage2" type="file">
+													</div>
+												</div>
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 											</div>
 										</div>
 

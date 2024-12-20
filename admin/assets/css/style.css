@@ -1391,10 +1391,17 @@ button.bg-danger:hover {
 }
 .header .header-left .logo {
 	display: inline-block;
+<<<<<<< HEAD
 	line-height: 50px;
 }
 .header .header-left .logo img {
     max-height: 50px;
+=======
+	line-height: 60px;
+}
+.header .header-left .logo img {
+    max-height: 40px;
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
     width: auto;
 }
 .header-left .logo.logo-small {
@@ -3653,7 +3660,11 @@ table.table-inbox tbody tr.checked {
 	}
 	.mini-sidebar .header-left .logo img {
 		height: auto;
+<<<<<<< HEAD
 		max-height: 50px;
+=======
+		max-height: 40px;
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 		width: auto;
 	}
 	.mini-sidebar .header .header-left .logo {

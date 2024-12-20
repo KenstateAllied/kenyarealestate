@@ -1656,7 +1656,11 @@ blockquote {
 	top: 15px;
 	right: 15px;
 }
+<<<<<<< HEAD
 .featured-thumb .price, .featured-thumb .apartment {
+=======
+.featured-thumb .price, .featured-thumb .appartment {
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
@@ -2245,7 +2249,11 @@ Register page
 	padding: 40px 40px 70px 40px;
 }
 .comming-soon .logo-area {
+<<<<<<< HEAD
 	width: 50px
+=======
+	width: 150px
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 }
 .comming-soon .primary-half {
 	height: 100vh
@@ -2254,7 +2262,11 @@ Register page
 	position: absolute;
 	content: "";
 	width: 50%;
+<<<<<<< HEAD
 	height: 50%;
+=======
+	height: 100%;
+>>>>>>> 2b572ebcf4d8eb715101dfabb4815fbe0b945683
 	background-color: var(--theme-primary-color);
 	right: 0;
 	top: 0;
